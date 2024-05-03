@@ -75,7 +75,7 @@ functions:
           path: notes
           authorizer:
             name: userpool_authorizer
-            arn: ${ssm:/notes/${self:provider.stage}/userPoolArn}
+            arn: arn:aws:iam::531214006846:user/github-ci-user
 
 plugins:
   - serverless-iam-roles-per-function
