@@ -7,10 +7,6 @@ provider:
   lambdaHashingVersion: 20201221
   stage: ${opt:stage, 'dev'}
   region: us-east-1
-  # Add AWS credentials here
-  credentials:
-    accessKeyId: ${env.AWS_ACCESS_KEY_ID}
-    secretAccessKey: ${env.AWS_SECRET_ACCESS_KEY}
 
 functions:
   authorizer:
